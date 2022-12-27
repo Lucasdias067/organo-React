@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Botao from '../Botao'
 import Campo from '../Campo'
 import ListaSuspensa from '../ListaSuspensa'
-import '../Formulario/formulario.css'
+import '../Formulario/Formulario.css'
 import { IColaborador } from '../../types/interface/colaborador'
 import { ITimes } from '../../types/interface/times'
 import { v4 as uuidv4 } from 'uuid';

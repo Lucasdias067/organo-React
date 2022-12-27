@@ -1,6 +1,6 @@
 import hexToRgba from 'hex-to-rgba'
 import Colaborador from '../Colaborador'
-import '../Time/time.css'
+import '../Time/Time.css'
 import { ITimes } from '../../types/interface/times'
 import { IColaborador } from '../../types/interface/colaborador';
 

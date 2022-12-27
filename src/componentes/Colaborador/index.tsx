@@ -1,5 +1,5 @@
 import { IColaborador } from '../../types/interface/colaborador';
-import '../Colaborador/colaborador.css'
+import '../Colaborador/Colaborador.css'
 import { AiFillCloseCircle, AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 
 interface ColaboradorProps {
