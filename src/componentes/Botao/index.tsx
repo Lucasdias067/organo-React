@@ -1,4 +1,4 @@
-import './botao.css'
+import '../Botao/botao.css';
 
 interface BotaoProps {
   text: string

@@ -1,4 +1,4 @@
-import './lista-suspensa.css'
+import '../ListaSuspensa/lista-suspensa.css'
 
 interface ListaSuspensaProps {
   items: string[];

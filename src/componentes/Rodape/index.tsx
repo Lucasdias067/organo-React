@@ -1,4 +1,4 @@
-import './rodape.css'
+import '../Rodape/rodape.css'
 
 const Rodape = () => {
   return (
