@@ -1,4 +1,4 @@
-import './Campo.css';
+import '../Campo/Campo.css';
 
 interface CampoProps {
   type?: string;
@@ -9,7 +9,7 @@ interface CampoProps {
   obrigatorio?: boolean;
 }
 
-const Campo = ({ type = 'text', label, placeholder, valor, aoAlterado, obrigatorio }: CampoProps) => {
+export default function Campo({ type = 'text', label, placeholder, valor, aoAlterado, obrigatorio }: CampoProps) {
 
   function onChange(e: React.ChangeEvent<HTMLInputElement>) {
     aoAlterado(e.target.value)
@@ -29,4 +29,3 @@ const Campo = ({ type = 'text', label, placeholder, valor, aoAlterado, obrigator
   )
 }
 
-export default Campo
