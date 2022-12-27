@@ -1,4 +1,4 @@
-import '../Campo/Campo.css';
+import './Campo.css';
 
 interface CampoProps {
   type?: string;
