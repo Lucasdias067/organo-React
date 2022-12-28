@@ -11,10 +11,10 @@ Este é um projeto que poderá interagir criando uma lista de times. Primeiramen
 
 ## 🚀 Tecnologias:
 
-✅React-TS;<br>
-✅Styled-components responsivo;<br>
-✅Hooks: useState;<br>
-✅Componentes e props;<br>
+✅React-TS<br>
+✅Styled-components responsivo<br>
+✅Hooks (useState)<br>
+✅Componentes e props<br>
 
 ## Rodando o projeto:
 Para rodar o projeto, clone e dê um <b>npm install</b> e então <b>npm start</b>.
