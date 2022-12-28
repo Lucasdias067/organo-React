@@ -2,10 +2,10 @@ import { useState } from 'react'
 import Botao from '../Botao'
 import Campo from '../Campo'
 import ListaSuspensa from '../ListaSuspensa'
-import '../Formulario/Formulario.css'
 import { IColaborador } from '../../types/interface/colaborador'
 import { ITimes } from '../../types/interface/times'
 import { v4 as uuidv4 } from 'uuid';
+import { ContainerFormulario } from 'styles/styles'
 
 interface formularioProps {
   aoCadastrar: (valor: IColaborador) => void,
@@ -39,8 +39,8 @@ const Formulario = ({ aoCadastrar, times, cadastrarTime }: formularioProps) => {
   }
 
   return (
-    <section className="formulario-container">
-      <form className="formulario" onSubmit={aoSubmeter}>
+    <ContainerFormulario >
+      <form onSubmit={aoSubmeter}>
         <h2>Preencha os dados para criar o card</h2>
         <Campo
           obrigatorio={true}
@@ -67,7 +67,7 @@ const Formulario = ({ aoCadastrar, times, cadastrarTime }: formularioProps) => {
           aoAlterado={valor => setTime(valor)} />
         <Botao text='Criar card' />
       </form>
-      <form className="formulario" onSubmit={e => {
+      <form onSubmit={e => {
         e.preventDefault();
         cadastrarTime({ nome: nomeTime, cor: corTime, id: uuidv4()})
         setnomeTime('')
@@ -91,7 +91,7 @@ const Formulario = ({ aoCadastrar, times, cadastrarTime }: formularioProps) => {
         />
         <Botao text='Criar um novo time' />
       </form>
-    </section>
+    </ContainerFormulario>
   )
 }
 

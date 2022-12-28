@@ -1,8 +1,8 @@
 import hexToRgba from 'hex-to-rgba'
 import Colaborador from '../Colaborador'
-import '../Time/Time.css'
 import { ITimes } from '../../types/interface/times'
 import { IColaborador } from '../../types/interface/colaborador';
+import { ContainerTimes } from 'styles/styles';
 
 interface timeProps {
   time: ITimes;
@@ -15,10 +15,10 @@ interface timeProps {
 const Time = ({ time, colaboradores, aoDeletar, mudarCor, aoFavoritar }: timeProps) => {
   return (
     colaboradores.length > 0 ? 
-    <section className='time' style={{ backgroundImage: 'url(/imagens/fundo.png)', backgroundColor: hexToRgba(time.cor, '0.6') }}>
-      <input type='color' value={time.cor} className='input-cor' onChange={(e: React.ChangeEvent<HTMLInputElement>) => mudarCor(e.target.value, time.id)} />
+    <ContainerTimes style={{ backgroundImage: 'url(/imagens/fundo.png)', backgroundColor: hexToRgba(time.cor, '0.6') }}>
+      <input type='color' value={time.cor} onChange={(e: React.ChangeEvent<HTMLInputElement>) => mudarCor(e.target.value, time.id)} />
       <h3 style={{ borderColor: time.cor }}>{time.nome}</h3>
-      <div className='colaboradores'>
+      <div >
         {colaboradores.map((colaborador) =>
           <Colaborador
             key={colaborador.id}
@@ -28,7 +28,7 @@ const Time = ({ time, colaboradores, aoDeletar, mudarCor, aoFavoritar }: timePro
             aoFavoritar={aoFavoritar}
           />)}
       </div>
-    </section> : <></>
+    </ContainerTimes> : <></>
   )
 }
 

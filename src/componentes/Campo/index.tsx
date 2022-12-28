@@ -1,4 +1,4 @@
-import '../Campo/Campo.css';
+import { ContainerInput } from 'styles/styles';
 
 interface CampoProps {
   type?: string;
@@ -16,7 +16,7 @@ export default function Campo({ type = 'text', label, placeholder, valor, aoAlte
   }
 
   return (
-    <div className={`campo campo-${type}`}>
+    <ContainerInput>
       <label>{label}</label>
       <input
         value={valor}
@@ -25,7 +25,7 @@ export default function Campo({ type = 'text', label, placeholder, valor, aoAlte
         required={obrigatorio}
         placeholder={placeholder}
       />
-    </div>
+    </ContainerInput>
   )
 }
 

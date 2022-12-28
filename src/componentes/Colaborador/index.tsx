@@ -1,6 +1,6 @@
+import { Close, ContainerColaborador, ContainerColaboradorCard } from 'styles/styles';
 import { IColaborador } from '../../types/interface/colaborador';
-import '../Colaborador/Colaborador.css'
-import { AiFillCloseCircle, AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
+import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 
 interface ColaboradorProps {
   colaborador: IColaborador;
@@ -21,23 +21,22 @@ const Colaborador = ({ colaborador, corDeFundo, aoDeletar, aoFavoritar }: Colabo
   }
 
   return (
-    <div className="colaborador">
-      <AiFillCloseCircle
+    <ContainerColaborador>
+      <Close
         size={25}
-        className="deletar"
         onClick={() => aoDeletar(colaborador.id)}
       />
-      <div className="cabecalho" style={{ backgroundColor: corDeFundo }}>
+      <div style={{ backgroundColor: corDeFundo }}>
         <img src={colaborador.imagem} alt={colaborador.nome} />
       </div>
-      <div className="rodape">
+      <ContainerColaboradorCard >
         <h4>{colaborador.nome}</h4>
         <h5>{colaborador.cargo}</h5>
         <div className='favoritar'>
           {colaborador.favorito ? <AiFillHeart {...propsFavorito} color='#ff0000' /> : <AiOutlineHeart {...propsFavorito} />}
         </div>
-      </div>
-    </div>)
+      </ContainerColaboradorCard>
+    </ContainerColaborador>)
 }
 
 export default Colaborador

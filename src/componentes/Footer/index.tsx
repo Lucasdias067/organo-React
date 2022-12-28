@@ -1,8 +1,8 @@
-import './Footer.css'
+import { FooterContainer } from 'styles/styles';
 
 export default function Footer () {
   return (
-    <footer className="footer">
+    <FooterContainer >
       <section>
         <ul>
           <li>
@@ -28,6 +28,6 @@ export default function Footer () {
       <section>
         <p>Desenvolvido por Alura.</p>
       </section>
-    </footer>
+    </FooterContainer>
   )
 }

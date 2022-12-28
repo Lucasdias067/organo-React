@@ -1,4 +1,4 @@
-import '../ListaSuspensa/ListaSuspensa.css'
+import { ContainerTimesInput } from "styles/styles";
 
 interface ListaSuspensaProps {
   items: string[];
@@ -10,7 +10,7 @@ interface ListaSuspensaProps {
 
 const ListaSuspensa = ({ label, items, valor, aoAlterado, obrigatorio }: ListaSuspensaProps) => {
   return (
-    <div className="lista-suspensa">
+    <ContainerTimesInput >
       <label>{label}</label>
       <select
         required={obrigatorio}
@@ -19,7 +19,7 @@ const ListaSuspensa = ({ label, items, valor, aoAlterado, obrigatorio }: ListaSu
         <option />
         {items.map(item => <option key={item}>{item}</option>)}
       </select>
-    </div>
+    </ContainerTimesInput>
   )
 }
 

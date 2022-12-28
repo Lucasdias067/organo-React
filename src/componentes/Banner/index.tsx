@@ -1,10 +1,10 @@
-import '../Banner/Banner.css';
+import { Header } from '../../styles/styles'
 
 const Banner = () => {
   return (
-    <header className="cabecalho">
+    <Header >
       <img src='/imagens/banner.png' alt='Logo do Organo' />
-    </header>
+    </Header>
   )
 }
 

@@ -1,4 +1,4 @@
-import '../Botao/Botao.css';
+import { Button } from "styles/styles";
 
 interface BotaoProps {
   text: string
@@ -6,9 +6,9 @@ interface BotaoProps {
 
 const Botao = ({ text }: BotaoProps) => {
   return (
-    <button className="botao" type='submit'>
+    <Button>
       {text}
-    </button>
+    </Button>
   )
 }
 
