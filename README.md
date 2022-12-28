@@ -1,8 +1,7 @@
 # 👨🏽‍💻 ORGANO ALURA
 
 ![Organo e mais 6 páginas - Pessoal — Microsoft​ Edge 27_12_2022 21_42_57](https://user-images.githubusercontent.com/101364762/209754236-39810910-cd50-41f4-8b7b-da41a7146c7a.png)
-
-![Organo e mais 6 páginas - Pessoal — Microsoft​ Edge 27_12_2022 21_43_52](https://user-images.githubusercontent.com/101364762/209754241-01d8415a-ee8e-413d-a34e-01c39f9c1488.png)
+![Organo e mais 6 páginas - Pessoal — Microsoft​ Edge 27_12_2022 21_43_52](https://user-images.githubusercontent.com/101364762/209755039-ce319495-4c9a-4e11-b6d1-12932e8977e9.png)
 
 ## 📋 Descrição do projeto
 <p>
