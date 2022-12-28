@@ -9,13 +9,12 @@
 Este é um projeto que poderá interagir criando uma lista de times. Primeiramente colocará seu nome e cargo, na imagem deverá colocar um link da foto do GitHub, que é o usuário do seu perfil + .png, como no exemplo:  https://github.com/SEUPERFIL.png. Na parte de time haverá várias opções para escolher e você também pode personalizar o time preenchendo o formulário do lado, podendo escolher o nome e a cor do seu time. 
 </p>
 
-## 🌌 Tecnologias:
+## 🚀 Tecnologias:
 
 ✅React-TS;<br>
-✅Styled-components;<br>
+✅Styled-components responsivo;<br>
 ✅Hooks: useState;<br>
-✅Componentização;<br>
-✅Props;<br>
+✅Componentes e props;<br>
 
 ## Rodando o projeto:
 Para rodar o projeto, clone e dê um <b>npm install</b> e então <b>npm start</b>.
