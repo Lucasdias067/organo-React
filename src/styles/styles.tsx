@@ -123,7 +123,6 @@ export const ContainerColaborador = styled.div`
 
   > div {
     background-color: #f0f0f0;
-    border-radius: 10px 10px 0px 0px;
   }
 `;
 
@@ -131,6 +130,8 @@ export const ContainerColaboradorCard = styled.div`
   background: #ffffff;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
   border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: column;
   padding-top: 90px;
   padding-bottom: 40px;
   
@@ -162,13 +163,12 @@ export const Close = styled(AiFillCloseCircle)`
 
 export const ContainerTimes = styled.div`
   text-align: center;
-  padding: 32px;
+  padding: 24px;
   background-blend-mode: multiply;
   position: relative;
 
   h3 {
     font-size: 32px;
-    font-family: "Prata";
     border-bottom: 4px solid;
     display: inline-block;
     padding-bottom: 8px;
