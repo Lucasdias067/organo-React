@@ -21,10 +21,11 @@ export const Button = styled.button`
   cursor: pointer;
   font-weight: bold;
   border: none;
+  transition: linear 0.5s 0.15s;
 
   &:hover {
-    transform: scale(1.04);
-    transition: 1s;
+    transform: scale(1.02);
+    opacity: 0.9;
   }
 
   &:focus {
