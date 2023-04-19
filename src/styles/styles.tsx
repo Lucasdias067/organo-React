@@ -89,9 +89,9 @@ export const ContainerTimesInput = styled.div`
 export const ContainerFormulario = styled.section`
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 70px;
   justify-content: center;
-  margin: 5rem 10rem;
+  margin: 10%;
 
   form {
     flex: 1;
@@ -100,19 +100,22 @@ export const ContainerFormulario = styled.section`
     background: #f7f7f7;
     box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
-    padding: 36px 64px;
+    padding: 5%;
 
     h2 {
       font-weight: 600;
-      font-size: 30px;
+      font-size: 20px;
       text-align: center;
     }
+  }
+
+  @media (max-width: 700px) {
+    flex-direction: column;
   }
 `;
 
 export const ContainerColaborador = styled.div`
   position: relative;
-  width: 280px;
   margin-top: 48px;
 
   img {
@@ -123,14 +126,16 @@ export const ContainerColaborador = styled.div`
   }
 
   > div {
-    background-color: #f0f0f0;
+    background-color: #fff;
+    width: 250px;
+    height: 350px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 10px 10px;
   }
 `;
 
 export const ContainerColaboradorCard = styled.div`
   background: #ffffff;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
-  border-radius: 0px 0px 10px 10px;
   display: flex;
   flex-direction: column;
   padding-top: 90px;
@@ -186,6 +191,20 @@ export const ContainerTimes = styled.div`
     justify-content: space-around;
     margin-top: 32px;
     flex-wrap: wrap;
+  }
+
+  @media (max-width: 600px) {
+    .div-times{
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+      gap: 25px;
+      justify-content: flex-start;
+      flex-direction: row;
+    }
+
+    h3{
+      font-size: 22px
+    }
   }
 `;
 

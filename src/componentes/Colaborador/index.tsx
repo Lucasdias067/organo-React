@@ -22,20 +22,22 @@ const Colaborador = ({ colaborador, corDeFundo, aoDeletar, aoFavoritar }: Colabo
 
   return (
     <ContainerColaborador>
-      <Close
-        size={25}
-        onClick={() => aoDeletar(colaborador.id)}
-      />
-      <div style={{ backgroundColor: corDeFundo }}>
-        <img src={colaborador.imagem} alt={colaborador.nome} />
-      </div>
-      <ContainerColaboradorCard >
-        <h4>{colaborador.nome}</h4>
-        <h5>{colaborador.cargo}</h5>
-        <div className='favoritar'>
-          {colaborador.favorito ? <AiFillHeart {...propsFavorito} color='#ff0000' /> : <AiOutlineHeart {...propsFavorito} />}
+      <div>
+        <Close
+          size={25}
+          onClick={() => aoDeletar(colaborador.id)}
+        />
+        <div style={{ backgroundColor: corDeFundo }}>
+          <img src={colaborador.imagem} alt={colaborador.nome} />
         </div>
-      </ContainerColaboradorCard>
+        <ContainerColaboradorCard >
+          <h4>{colaborador.nome}</h4>
+          <h5>{colaborador.cargo}</h5>
+          <div className='favoritar'>
+            {colaborador.favorito ? <AiFillHeart {...propsFavorito} color='#ff0000' /> : <AiOutlineHeart {...propsFavorito} />}
+          </div>
+        </ContainerColaboradorCard>
+      </div>
     </ContainerColaborador>)
 }
 

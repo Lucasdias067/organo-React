@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
 body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -7,6 +8,12 @@ body {
 
 .times {
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .times h1 {
+    font-size: 30px
+  }
 }
 
 h1 {
@@ -18,7 +25,9 @@ h1 {
   margin: 28px 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
