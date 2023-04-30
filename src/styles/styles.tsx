@@ -227,6 +227,7 @@ export const FooterContainer = styled.footer`
   }
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+    padding: 25px;
   }
 `;
